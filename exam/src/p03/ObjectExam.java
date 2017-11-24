@@ -1,4 +1,4 @@
-package p3;
+package p03;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ public class ObjectExam {
 	int num1;
 	int num2;
 
-	ObjectExam() {
+	public ObjectExam() {
 		System.out.println("ObjectExam ½ÇÇà");
 	}
 

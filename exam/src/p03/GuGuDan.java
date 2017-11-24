@@ -1,4 +1,4 @@
-package p3;
+package p03;
 
 public class GuGuDan {
 	GuGuDan() {

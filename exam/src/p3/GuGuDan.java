@@ -1,10 +1,14 @@
 package p3;
 
 public class GuGuDan {
+	GuGuDan() {
+		System.out.println("GuGuDan ½ÇÇà");
+	}
+
 	void printLoop(ObjectExam oe) {
-		for (int i = 1; i < 10; i++) {
-			for (int j = 1; j < 10; j++) {
-				// System.out.printf("%2d * %2d = %2d ||", j,i,(i*j));
+		for (int i = 1; i < oe.num1; i++) {
+			for (int j = 1; j < oe.num2; j++) {
+				// System.out.printf("%2d * %2d = %2d ||", j, i, (i * j));
 				System.out.print("[" + i + ", " + j + "]");
 			}
 			System.out.println("");
@@ -12,6 +16,5 @@ public class GuGuDan {
 	}
 
 	public static void main(String[] args) {
-		
 	}
 }

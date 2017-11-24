@@ -1,37 +1,65 @@
 package p04;
 
+import java.util.Scanner;
+
 public class LoopTest {
-	void add() {
+	int num1 = 0;
+	int num2 = 0;
+
+	LoopTest() {
+		System.out.println("LoopTest 시작");
+	}
+
+	void add(int str, int end) {
 		int all = 0;
-		for (int i = 1; i <= 100; i++) {
-			all += i;
+		int temp = end;
+		if (end % 2 != 0) {
+			all += end;
+			end--;
 		}
-		System.out.println("1에서 100까지의 합:" + all);
+		for (int i = str; i <= end; i++) {
+			all += (i + end);
+			end--;
+		}
+		System.out.println(str + "에서 " + temp + "까지의 합:" + all);
 	}
 
-	void one() {
-		System.out.println("홀수를 출력합니다");
-		for (int i = 1; i <= 100; i+=2) {
+	void print(int num, int end) {
+		if (num % 2 == 1) {
+			System.out.println("홀수를 출력합니다");
+		} else {
+			System.out.println("짝수를 출력합니다");
+		}
+
+		for (int i = num; i <= end; i += 2) {
 			System.out.print(i + ", ");
 		}
 		System.out.println();
 	}
 
-	void two() {
-		System.out.println("짝수를 출력합니다");
-		for (int i = 2; i <= 100; i+=2) {
-			System.out.print(i + ", ");
+	void numInput() {
+		Scanner s = new Scanner(System.in);
+		System.out.println("첫번째 숫자를 입력하세요");
+		int temp;
+		num1 = s.nextInt();
+		System.out.println("두번째 숫자를 입력하세요");
+		num2 = s.nextInt();
+		if (num1 > num2) {
+			temp = num1;
+			num1 = num2;
+			num2 = temp;
 		}
-		System.out.println();
 	}
-	
+
 	public static void main(String[] args) {
-		LoopTest lT = new LoopTest();
+		LoopTest loopTest = new LoopTest();
 
-		lT.add();
-		lT.one();
-		lT.two();
-
+		loopTest.numInput();
+		loopTest.add(loopTest.num1, loopTest.num2);
+		loopTest.numInput();
+		loopTest.print(loopTest.num1, loopTest.num2);
+		loopTest.numInput();
+		loopTest.print(loopTest.num1, loopTest.num2);
 	}
 
 }

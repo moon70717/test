@@ -18,7 +18,7 @@ public class ObjectExam {
 		return num2;
 	}
 
-	void inputNums(ObjectExam oe) {
+	public void inputNums(ObjectExam oe) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("첫번째 숫자를 입력해 주세요 : ");
 		oe.num1 = sc.nextInt();

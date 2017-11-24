@@ -1,11 +1,11 @@
 package p03;
 
 public class GuGuDan {
-	GuGuDan() {
+	public GuGuDan() {
 		System.out.println("GuGuDan ½ÇÇà");
 	}
 
-	void printLoop(ObjectExam oe) {
+	public void printLoop(ObjectExam oe) {
 		for (int i = 1; i < oe.num1; i++) {
 			for (int j = 1; j < oe.num2; j++) {
 				// System.out.printf("%2d * %2d = %2d ||", j, i, (i * j));

@@ -7,7 +7,7 @@ public class LoopTest {
 	int num2 = 0;
 
 	LoopTest() {
-		System.out.println("LoopTest 시작");
+		System.out.println("<LoopTest 시작>");
 	}
 
 	void add() {

@@ -34,8 +34,4 @@ public class ObjectExam {
 		System.out.println("시작값:" + oe.num1);
 		System.out.println("종료값:" + oe.num2);
 	}
-
-	public static void main(String[] args) {
-		
-	}
 }

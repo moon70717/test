@@ -50,10 +50,10 @@ public class LoopTest {
 			num2 = temp;
 		}
 	}
-
+	
 	public static void main(String[] args) {
 		LoopTest loopTest = new LoopTest();
-
+		
 		loopTest.numInput();
 		loopTest.add(loopTest.num1, loopTest.num2);
 		loopTest.numInput();

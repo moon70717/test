@@ -1,5 +1,7 @@
 package p05;
 
+import java.util.Scanner;
+
 public class TotalExam {
 	int a;
 	Integer ac;
@@ -18,9 +20,20 @@ public class TotalExam {
 		
 		System.out.println(Integer.parseInt("167")==167);
 		
-		String[] strArr=new String[3];
-		strArr[0]="123";
-		strArr[1]="123";
-		strArr[2]="123";
+		System.out.println("스트링 배열 변수의 방갯수 입력");
+		Scanner s=new Scanner(System.in);
+		int leng=s.nextInt();
+		s.nextLine();
+		String[] strArr=new String[leng];
+		
+		for(int i=0;i<strArr.length;i++) {
+			System.out.println("넣을 문자를 입력하세요");
+			strArr[i]=s.nextInt()+"";
+		}
+		for(int i=0;i<strArr.length;i++) {
+			System.out.println(strArr[i]);
+		}
+		
+		s.close();
 	}
 }

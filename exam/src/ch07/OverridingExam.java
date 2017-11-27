@@ -1,9 +1,9 @@
 package ch07;
 
-class father {
+class Father {
 	int f1 = 11;
 	
-	father(String str){
+	Father(String str){
 		System.out.println("부모클래스를 상속받았습니다. "+str);
 	}
 	
@@ -12,7 +12,7 @@ class father {
 	}
 }
 
-public class OverridingExam extends father {// 부모 클래스에게 상속받은것을 변경하는 예제
+public class OverridingExam extends Father {// 부모 클래스에게 상속받은것을 변경하는 예제
 	static int f1=1;
 	
 	OverridingExam(){

@@ -1,6 +1,6 @@
 package ch07;
 
-public class InterfaceExam2 {//fighterTestÆĞÅ°Áö ÂüÁ¶
+public class InterfaceExam2 {//fighterTestíŒ¨í‚¤ì§€ ì°¸ì¡°
 
 }
 
@@ -12,28 +12,28 @@ interface attackable{
 	void attack(unit u);
 }
 
-interface fightable extends movable, attackable{} //ÀÎÅÍÆäÀÌ½º´Â ÀÎÅÍÆäÀÌ½º·ÎºÎÅÍ¸¸ »ó¼ÓÀ» ¹ŞÀ»¼öÀÖ´Ù
-//¶ÇÇÑ Å¬·¡½º¿Í ´Ş¸® ´ÙÁß»ó¼ÓÀÌ °¡´ÉÇÏ´Ù
+interface fightable extends movable, attackable{} //ì¸í„°í˜ì´ìŠ¤ëŠ” ì¸í„°í˜ì´ìŠ¤ë¡œë¶€í„°ë§Œ ìƒì†ì„ ë°›ì„ìˆ˜ìˆë‹¤
+//ë˜í•œ í´ë˜ìŠ¤ì™€ ë‹¬ë¦¬ ë‹¤ì¤‘ìƒì†ì´ ê°€ëŠ¥í•˜ë‹¤
 
-class fighter implements fightable{//±¸ÇöÀ» ÇÏ¿© ¿Ï¼ºÀ» ÇØÁà¾ß ÇÑ´Ù
+class fighter implements fightable{//êµ¬í˜„ì„ í•˜ì—¬ ì™„ì„±ì„ í•´ì¤˜ì•¼ í•œë‹¤
 	public void move(int x,int y) {
-		System.out.println(x+"+"+y+"·Î ÀÌµ¿ÇÏ¿´½À´Ï´Ù");
+		System.out.println(x+"+"+y+"ë¡œ ì´ë™í•˜ì˜€ìŠµë‹ˆë‹¤");
 	}
 	public void attack(unit u) {
 		
 	}
 }
-/*abstract class fighter implements fightable{//ÀÏºÎ¸¸ ±¸ÇöÇÒ¶§´Â abstract¸¦ ºÙ¿© ¹Ì¿Ï¼ºµÈ Ãß»óÅ¬·¡½ºÀÓÀ» ¾Ë·ÁÁà¾ßÇÑ´Ù
+/*abstract class fighter implements fightable{//ì¼ë¶€ë§Œ êµ¬í˜„í• ë•ŒëŠ” abstractë¥¼ ë¶™ì—¬ ë¯¸ì™„ì„±ëœ ì¶”ìƒí´ë˜ìŠ¤ì„ì„ ì•Œë ¤ì¤˜ì•¼í•œë‹¤
 	public void move(int x,int y) {
-		System.out.println(x+"+"+y+"·Î ÀÌµ¿ÇÏ¿´½À´Ï´Ù");
+		System.out.println(x+"+"+y+"ë¡œ ì´ë™í•˜ì˜€ìŠµë‹ˆë‹¤");
 	}
 }*/
 
 
-/*class fighter extends unit implements fightable{//»ó¼Ó°ú ±¸ÇöÀ» µ¿½Ã¿¡ ÇÏ´Â°Íµµ °¡´ÉÇÏ´Ù.
- * ÀÎÅÍÆäÀÌ½ºÀÇ ÀÌ¸§ µÚ¿¡´Â ableÀ» ºÙ¿© ÀÌ°ÍÀÌ ÀÎÅÍÆäÀÌ½ºÀÓÀ» ¾Ë±â ½±°Ô ÇØÁÖ´Â°ÍÀÌ ÁÁ´Ù 
+/*class fighter extends unit implements fightable{//ìƒì†ê³¼ êµ¬í˜„ì„ ë™ì‹œì— í•˜ëŠ”ê²ƒë„ ê°€ëŠ¥í•˜ë‹¤.
+ * ì¸í„°í˜ì´ìŠ¤ì˜ ì´ë¦„ ë’¤ì—ëŠ” ableì„ ë¶™ì—¬ ì´ê²ƒì´ ì¸í„°í˜ì´ìŠ¤ì„ì„ ì•Œê¸° ì‰½ê²Œ í•´ì£¼ëŠ”ê²ƒì´ ì¢‹ë‹¤ 
 	public void move(int x,int y) {
-		System.out.println(x+"+"+y+"·Î ÀÌµ¿ÇÏ¿´½À´Ï´Ù");
+		System.out.println(x+"+"+y+"ë¡œ ì´ë™í•˜ì˜€ìŠµë‹ˆë‹¤");
 	}
 }*/
 class unit{

@@ -14,9 +14,9 @@ public class Initialization2 {
 		Initialization2 initi2=new Initialization2();
 		Initialization2 initi3=new Initialization2();
 		
-		System.out.println("initi1ÀÇ Á¦Ç°¹øÈ£´Â "+initi1.seNo);
-		System.out.println("initi2ÀÇ Á¦Ç°¹øÈ£´Â "+initi2.seNo);
-		System.out.println("initi3ÀÇ Á¦Ç°¹øÈ£´Â "+initi3.seNo);
-		System.out.println("ÃÑ °¹¼ö´Â "+count+"°³ ÀÔ´Ï´Ù");
+		System.out.println("initi1ì˜ ì œí’ˆë²ˆí˜¸ëŠ” "+initi1.seNo);
+		System.out.println("initi2ì˜ ì œí’ˆë²ˆí˜¸ëŠ” "+initi2.seNo);
+		System.out.println("initi3ì˜ ì œí’ˆë²ˆí˜¸ëŠ” "+initi3.seNo);
+		System.out.println("ì´ ê°¯ìˆ˜ëŠ” "+count+"ê°œ ì…ë‹ˆë‹¤");
 	}
 }

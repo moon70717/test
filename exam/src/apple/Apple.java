@@ -6,7 +6,7 @@ public class Apple {
 	int haveApple=10;
 	
 	void say() {
-		System.out.println("»ç°ú 1°³¿¡"+cost+"ÀÔ´Ï´Ù »ç°¡¼¼¿ä~\n"+haveApple+"°³ ³²¾Ò½À´Ï´Ù~");
+		System.out.println("ì‚¬ê³¼ 1ê°œì—"+cost+"ì…ë‹ˆë‹¤ ì‚¬ê°€ì„¸ìš”~\n"+haveApple+"ê°œ ë‚¨ì•˜ìŠµë‹ˆë‹¤~");
 	}
 	
 	void sell(int cMoney, int count) {
@@ -14,10 +14,10 @@ public class Apple {
 		if(cMoney>=count*cost) {
 			aMoney+=(count*cost);
 			haveApple-=count;
-			System.out.println("¿©±â »ç°ú"+count+"°³ ÀÔ´Ï´Ù!");
+			System.out.println("ì—¬ê¸° ì‚¬ê³¼"+count+"ê°œ ì…ë‹ˆë‹¤!");
 		}
 		else {
-			System.out.println("µ·ÀÌ ºÎÁ·ÇÕ´Ï´Ù");
+			System.out.println("ëˆì´ ë¶€ì¡±í•©ë‹ˆë‹¤");
 		}
 	}
 }

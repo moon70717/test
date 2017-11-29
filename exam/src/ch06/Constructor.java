@@ -3,15 +3,15 @@ package ch06;
 public class Constructor {
 	int strat;
 	
-	Constructor(int i){//»ı¼ºÀÚ¿¡ ÀÖ´Â°ÍÀº ¸ÇÃ³À½ ÇÑ¹ø »ı¼º‰çÀ»¶§¸¸ ½ÇÇàµÊ
-		strat=i;//°ª ¼±¾ğ°¡´É
-		System.out.println("ConstructorÀÇ »ı¼ºÀÚ°¡ »ı¼ºµÇ¾ú½À´Ï´Ù"+i);//µû·Î »ı¼ºÇÏÁö ¾ÊÀ»½Ã¿¡´Â µğÆúÆ® »ı¼ºÀÚ°¡ ÀÚµ¿À¸·Î »ı¼ºµÊ
+	Constructor(int i){//ìƒì„±ìì— ìˆëŠ”ê²ƒì€ ìƒì„±ìê°€ ìƒì„±í• ë•Œ ì‹¤í–‰ë¨
+		strat=i;//ê°’ ì„ ì–¸ê°€ëŠ¥
+		System.out.println("Constructorì˜ ìƒì„±ìê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤"+i);//ë”°ë¡œ ìƒì„±í•˜ì§€ ì•Šì„ì‹œì—ëŠ” ë””í´íŠ¸ ìƒì„±ìê°€ ìë™ìœ¼ë¡œ ìƒì„±ë¨
 	}
-	Constructor(){// ¾Öµµ ¿À¹ö·Îµù °¡´ÉÇÔ
-		System.out.println("¸Å°³º¯¼ö°¡ ¾ø´Â Constructor°¡ »ı¼ºµÇ¾ú½À´Ï´Ù");
+	Constructor(){// ì• ë„ ì˜¤ë²„ë¡œë”© ê°€ëŠ¥í•¨
+		System.out.println("ë§¤ê°œë³€ìˆ˜ê°€ ì—†ëŠ” Constructorê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤");
 	}
 	public static void main(String[]args) {
-		Constructor cons=new Constructor(3);//ConstructorÀÇ »ı¼ºÀÚ¸¦ »ı¼ºÇÔ, °ªÀ» º¸³»ÁÙ¼öÀÖÀ½
+		Constructor cons=new Constructor(3);//Constructorì˜ ìƒì„±ìë¥¼ ìƒì„±í•¨, ê°’ì„ ë³´ë‚´ì¤„ìˆ˜ìˆìŒ
 		Constructor cons2=new Constructor();
 	}
 	

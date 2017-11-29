@@ -7,11 +7,11 @@ public class ObjectExam {
 	int num2;
 
 	public ObjectExam() {
-		System.out.println("ObjectExam ½ÇÇà");
+		System.out.println("ObjectExam ì‹¤í–‰");
 	}
 
 	void add(int num1, int num2) {
-		System.out.println("µÑÀÇ ÇÕÀº " + (num1 + num2));
+		System.out.println("ë‘˜ì˜ í•©ì€ " + (num1 + num2));
 	}
 
 	int getNum2(int num2) {
@@ -20,9 +20,9 @@ public class ObjectExam {
 
 	public void inputNums(ObjectExam oe) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Ã¹¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä : ");
+		System.out.println("ì²«ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš” : ");
 		oe.num1 = sc.nextInt();
-		System.out.println("µÎ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä : ");
+		System.out.println("ë‘ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•´ ì£¼ì„¸ìš” : ");
 		oe.num2 = sc.nextInt();
 	}
 
@@ -31,7 +31,7 @@ public class ObjectExam {
 			System.out.print(i + ",");
 		}
 		System.out.println(oe.num2);
-		System.out.println("½ÃÀÛ°ª:" + oe.num1);
-		System.out.println("Á¾·á°ª:" + oe.num2);
+		System.out.println("ì‹œì‘ê°’:" + oe.num1);
+		System.out.println("ì¢…ë£Œê°’:" + oe.num2);
 	}
 }

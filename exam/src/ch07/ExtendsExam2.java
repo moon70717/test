@@ -4,12 +4,12 @@ class fathers {
 	int i=3;
 }
 
-public class ExtendsExam2 extends fathers{// fatherÅ¬·¹½º¸¦ »ó¼Ó¹ŞÀ½
+public class ExtendsExam2 extends fathers{// fatherí´ë ˆìŠ¤ë¥¼ ìƒì†ë°›ìŒ
 	
 	void use() {
-		System.out.println(i);//»ó¼Ó¹ŞÀº Å¬·¡½ºÀÇ º¯¼ö¸¦ »ç¿ë°¡´ÉÇÔ
+		System.out.println(i);//ìƒì†ë°›ì€ í´ë˜ìŠ¤ì˜ ë³€ìˆ˜ë¥¼ ì‚¬ìš©ê°€ëŠ¥í•¨
 		
-		System.out.println(--i);//»ó¼Ó¹ŞÀº Å¬·¡½ºÀÇ º¯¼ö¸¦ ¼öÁ¤ÇÒ¼ö ÀÖÀ½
+		System.out.println(--i);//ìƒì†ë°›ì€ í´ë˜ìŠ¤ì˜ ë³€ìˆ˜ë¥¼ ìˆ˜ì •í• ìˆ˜ ìˆìŒ
 	}
 	
 	public static void main(String[]args) {

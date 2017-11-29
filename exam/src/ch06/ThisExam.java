@@ -7,22 +7,22 @@ public class ThisExam {
 	int z;
 
 	ThisExam() {
-		this(3, 5, 6, 7);// ¸Å°³º¯¼ö°¡ ÀÖ´Â ThisExam·Î º¸³»ÁÙ¼öÀÖÀ½
+		this(3, 5, 6, 7);// ë§¤ê°œë³€ìˆ˜ê°€ ìˆëŠ” ThisExamë¡œ ë³´ë‚´ì¤„ìˆ˜ìˆìŒ
 	}
 
 	ThisExam(int i) {
-		this(i, 5, 6, 7);// ÀÏºÎ¸¸ º¯°æÇØ¼­ Àü¼Û°¡´É
+		this(i, 5, 6, 7);// ì¼ë¶€ë§Œ ë³€ê²½í•´ì„œ ì „ì†¡ê°€ëŠ¥
 	}
 
 	ThisExam(ThisExam te) {
-		i = te.i;// »ı¼ºÀÚ¸¦ ÀÌ¿ëÇØ¼­ °ªÀ» º¹»çÇÒ¼öÀÖÀ½
+		i = te.i;// ìƒì„±ìë¥¼ ì´ìš©í•´ì„œ ê°’ì„ ë³µì‚¬í• ìˆ˜ìˆìŒ
 		j = te.j;
 		x = te.x;
 		z = te.z;
 	}
 
 	public ThisExam(int i, int j, int x, int z) {
-		this.i = i;// º¯¼ö ÀÌ¸§ÀÌ °°À»½Ã this·Î Àü¿ªº¯¼ö¸¦ È£Ãâ°¡´É
+		this.i = i;// ë³€ìˆ˜ ì´ë¦„ì´ ê°™ì„ì‹œ thisë¡œ ì „ì—­ë³€ìˆ˜ë¥¼ í˜¸ì¶œê°€ëŠ¥
 		this.j = j;
 		this.x = x;
 		this.z = z;
@@ -33,8 +33,8 @@ public class ThisExam {
 		ThisExam te2 = new ThisExam(88);
 		ThisExam te3 = new ThisExam(te2);
 
-		System.out.println("te1ÀÇ °ªÀ» Ãâ·ÂÇÕ´Ï´Ù" + te1.i + " " + te1.j + " " + te1.x + " " + te1.z + " ");
-		System.out.println("te2ÀÇ °ªÀ» Ãâ·ÂÇÕ´Ï´Ù" + te2.i + " " + te2.j + " " + te2.x + " " + te2.z + " ");
-		System.out.println("te3ÀÇ °ªÀ» Ãâ·ÂÇÕ´Ï´Ù" + te3.i + " " + te3.j + " " + te3.x + " " + te3.z + " ");
+		System.out.println("te1ì˜ ê°’ì„ ì¶œë ¥í•©ë‹ˆë‹¤" + te1.i + " " + te1.j + " " + te1.x + " " + te1.z + " ");
+		System.out.println("te2ì˜ ê°’ì„ ì¶œë ¥í•©ë‹ˆë‹¤" + te2.i + " " + te2.j + " " + te2.x + " " + te2.z + " ");
+		System.out.println("te3ì˜ ê°’ì„ ì¶œë ¥í•©ë‹ˆë‹¤" + te3.i + " " + te3.j + " " + te3.x + " " + te3.z + " ");
 	}
 }

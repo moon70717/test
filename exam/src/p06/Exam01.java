@@ -15,7 +15,7 @@ public class Exam01 {
 			String str = "";
 			for (int j = numarr[2]; j >= numarr[3]; j--) {
 				if ((i * j) % numarr[4] == 0) {
-					str += "[" + numarr[4] + "ÀÇ¹è¼ö], ";
+					str += "[" + numarr[4] + "ì˜ë°°ìˆ˜], ";
 				}
 				else {
 					str += "[" + i + "*" + j + "=" + (i * j) + "]" + ", ";
@@ -28,7 +28,7 @@ public class Exam01 {
 	static void inputNums() {
 		Scanner s = new Scanner(System.in);
 		for (int i = 0; i < 5; i++) {
-			System.out.println((i + 1) + "¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println((i + 1) + "ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			numarr[i] = s.nextInt();
 
 		}

@@ -7,8 +7,8 @@ public class TvTest {
 		t.power();
 		t.chUp();
 		t.chDown();
-		t.color("¹«Áö°³»ö");
-		System.out.println("ÇöÀç Ã¤³ÎÀº "+t.ch+"ÀÔ´Ï´Ù.");
+		t.color("ë¬´ì§€ê°œìƒ‰");
+		System.out.println("í˜„ì¬ ì±„ë„ì€ "+t.ch+"ì…ë‹ˆë‹¤.");
 		t.power();
 	}
 }

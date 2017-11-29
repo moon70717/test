@@ -1,6 +1,6 @@
 package ch06;
 
-public class Varargs {// °¡º¯ÀÎÀÚ
+public class Varargs {// ê°€ë³€ì¸ì
 	String concate(String s1) {
 		String all="";
 		all+=s1;
@@ -11,21 +11,21 @@ public class Varargs {// °¡º¯ÀÎÀÚ
 		all+=s1+s2;
 		return all;
 	}
-	String concate(String s1,String s2,String s3) {//°¹¼öº°·Î ÀÏÀÏÈ÷ ¸Å°³º¯¼ö¸¦ Ãß°¡ÇØ¾ßµÇ¼­ ±ÍÂúÀ½
+	String concate(String s1,String s2,String s3) {//ê°¯ìˆ˜ë³„ë¡œ ì¼ì¼íˆ ë§¤ê°œë³€ìˆ˜ë¥¼ ì¶”ê°€í•´ì•¼ë˜ì„œ ê·€ì°®ìŒ
 		String all="";
 		all+=s1+s2+s3;
 		return all;
 	}
 	
-	String[] concate(String...strings) {//¿©·¯°³¸¦ ÇÑ¹ø¿¡ ¹ŞÀ»¼ö ÀÖÀ½
-		return strings;//´ë½Å ÀÚµ¿À¸·Î ¹è¿­·Î º¯È¯µÇ¼­ ³ª°¡°ÔµÊ
+	String[] concate(String...strings) {//ì—¬ëŸ¬ê°œë¥¼ í•œë²ˆì— ë°›ì„ìˆ˜ ìˆìŒ
+		return strings;//ëŒ€ì‹  ìë™ìœ¼ë¡œ ë°°ì—´ë¡œ ë³€í™˜ë˜ì„œ ë‚˜ê°€ê²Œë¨
 		
 	}
-	/*String[] concate(String str, String...strings) {  À­³ğÇÏ°í °°Àº Ãë±ŞÀÌ µÇ¼­ ¸Ş¼­µå¸¦ È£ÃâÇÒ‹š ¿¡·¯°¡ »ı±è 
+	/*String[] concate(String str, String...strings) {  ìœ—ë†ˆí•˜ê³  ê°™ì€ ì·¨ê¸‰ì´ ë˜ì„œ ë©”ì„œë“œë¥¼ í˜¸ì¶œí• Â‹Âš ì—ëŸ¬ê°€ ìƒê¹€ 
 		return strings;  
 		
 	}*/
-	String[] concate(int i, String...strings) {//´Ù¸¥ ¸Å°³º¯¼ö¿Í °°ÀÌ »ç¿ëÇÒ·Á¸é Á¦ÀÏ µÚ¿¡ µÖ¾ßÇÔ
+	String[] concate(int i, String...strings) {//ë‹¤ë¥¸ ë§¤ê°œë³€ìˆ˜ì™€ ê°™ì´ ì‚¬ìš©í• ë ¤ë©´ ì œì¼ ë’¤ì— ë‘¬ì•¼í•¨
 		return strings;
 		
 	}
@@ -35,7 +35,7 @@ public class Varargs {// °¡º¯ÀÎÀÚ
 			System.out.print(str[i]);
 		}System.out.println();
 		String[] str2={"3","5"};
-		str=new Varargs().concate(str2);//¹è¿­µµ º¸³¾¼öÀÖÀ½
+		str=new Varargs().concate(str2);//ë°°ì—´ë„ ë³´ë‚¼ìˆ˜ìˆìŒ
 		for(int i=0;i<str2.length;i++) {
 			System.out.print(str[i]);
 		}System.out.println();

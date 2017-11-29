@@ -7,7 +7,7 @@ public class LoopTest {
 	int num2 = 0;
 
 	LoopTest() {
-		System.out.println("<LoopTest ½ÃÀÛ>");
+		System.out.println("<LoopTest ì‹œì‘>");
 	}
 
 	void add() {
@@ -22,15 +22,15 @@ public class LoopTest {
 			all += (i + num2);
 			num2--;
 		}
-		System.out.println(num1 + "¿¡¼­ " + temp + "±îÁöÀÇ ÇÕ:" + all);
+		System.out.println(num1 + "ì—ì„œ " + temp + "ê¹Œì§€ì˜ í•©:" + all);
 	}
 
 	void print() {
 		numInput();
 		if (num1 % 2 == 1) {
-			System.out.println("È¦¼ö¸¦ Ãâ·ÂÇÕ´Ï´Ù");
+			System.out.println("í™€ìˆ˜ë¥¼ ì¶œë ¥í•©ë‹ˆë‹¤");
 		} else {
-			System.out.println("Â¦¼ö¸¦ Ãâ·ÂÇÕ´Ï´Ù");
+			System.out.println("ì§ìˆ˜ë¥¼ ì¶œë ¥í•©ë‹ˆë‹¤");
 		}
 
 		for (int i = num1; i <= num2; i += 2) {
@@ -52,9 +52,9 @@ public class LoopTest {
 
 	void numInput() {
 		Scanner s = new Scanner(System.in);
-		System.out.println("Ã¹¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ì²«ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		num1 = s.nextInt();
-		System.out.println("µÎ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		System.out.println("ë‘ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		num2 = s.nextInt();
 		if (num1 > num2) {
 			int temp = num1;

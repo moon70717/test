@@ -8,9 +8,9 @@ public class InterfaceExam{
 	
 	
 }
-interface print{//Ãß»óÅ¬·¡½º´Â ºÎºÐÀûÀ¸·Î¶óµµ ¿Ï¼ºÀÌ µÇ¾îÀÖ´Âµ¥ ÀÎÅÍÆäÀÌ½º´Â ±×·±°Åµµ¾øÀ½
-	//Ãß»óÅ¬·¡½º¿Í °°ÀÌ ÀÎÅÍÆäÀÌ½ºµµ ±× ÀÚÃ¼·Î´Â ÀÎ½ºÅÏ½º »ý¼ººÒ°¡
-	int dama=3;//public static finalÀÌ ºÙ¾î¾ß ÇÏ³ª »ý·«°¡´ÉÇÔ
+interface print{//ì¶”ìƒí´ëž˜ìŠ¤ëŠ” ë¶€ë¶„ì ìœ¼ë¡œë¼ë„ ì™„ì„±ì´ ë˜ì–´ìžˆëŠ”ë° ì¸í„°íŽ˜ì´ìŠ¤ëŠ” ê·¸ëŸ°ê±°ë„ì—†ìŒ
+	//ì¶”ìƒí´ëž˜ìŠ¤ì™€ ê°™ì´ ì¸í„°íŽ˜ì´ìŠ¤ë„ ê·¸ ìžì²´ë¡œëŠ” ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ë¶ˆê°€
+	int dama=3;//public static finalì´ ë¶™ì–´ì•¼ í•˜ë‚˜ ìƒëžµê°€ëŠ¥í•¨
 	
-	public abstract void run();//¸Þ¼Òµåµµ »ý¼º°¡´É
+	public abstract void run();//ë©”ì†Œë“œë„ ìƒì„±ê°€ëŠ¥
 }

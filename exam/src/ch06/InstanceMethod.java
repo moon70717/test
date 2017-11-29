@@ -5,16 +5,16 @@ public class InstanceMethod {
 	int insInt=0;
 	
 	int insInt2=insInt;
-	//static int sInt2=insInt2; »ı¼ºÀÚ°¡ ÇÊ¿äÇÔ
-	static int sInt2=new InstanceMethod().insInt2;//ÀÌ·¸°Ô
+	//static int sInt2=insInt2; ìƒì„±ìê°€ í•„ìš”í•¨
+	static int sInt2=new InstanceMethod().insInt2;//ì´ë ‡ê²Œ
 	
 	static void sInt() {
 		System.out.println(sInt);
-		//insInt(); »ı¼ºÀÚ°¡ ÇÊ¿äÇÏ¹Ç·Î ºÒ°¡´ÉÇÔ
+		//insInt(); ìƒì„±ìê°€ í•„ìš”í•˜ë¯€ë¡œ ë¶ˆê°€ëŠ¥í•¨
 	}
 	
 	void insInt() {
-		System.out.println(insInt);//ÀÎ½ºÅÏ½º ¸Ş¼­µåÀÌ¹Ç·Î ÀÎ½ºÅÏ½º º¯¼ö¸¦ ±×³É »ç¿ë°¡´É
+		System.out.println(insInt);//ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œì´ë¯€ë¡œ ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ë¥¼ ê·¸ëƒ¥ ì‚¬ìš©ê°€ëŠ¥
 	}
 	
 	void calling() {
@@ -26,9 +26,9 @@ public class InstanceMethod {
 		InstanceMethod ins=new InstanceMethod();
 		sInt=3;
 		ins.insInt=2;
-		sInt();//staticÀº »ı¼ºÀÚ ÇÊ¿ä¾øÀ½, static ¸Ş¼­µå¶ó°íÇÔ
-		ins.insInt();//staticÀÌ ¾øÀ»°æ¿ì »ı¼ºÀÚ ÇÊ¿ä, ÀÎ½ºÅÏ½º¸Ş¼­µå¶ó°í ÇÔ
+		sInt();//staticì€ ìƒì„±ì í•„ìš”ì—†ìŒ, static ë©”ì„œë“œë¼ê³ í•¨
+		ins.insInt();//staticì´ ì—†ì„ê²½ìš° ìƒì„±ì í•„ìš”, ì¸ìŠ¤í„´ìŠ¤ë©”ì„œë“œë¼ê³  í•¨
 		
-		ins.calling();//ÀÎ½ºÅÏ½º ¸Ş¼­µå¿¡¼­´Â µÎÁ¾·ùÀÇ ¸Ş¼­µå¸¦ µÑ´Ù È£Ãâ°¡´É
+		ins.calling();//ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œì—ì„œëŠ” ë‘ì¢…ë¥˜ì˜ ë©”ì„œë“œë¥¼ ë‘˜ë‹¤ í˜¸ì¶œê°€ëŠ¥
 	}
 }

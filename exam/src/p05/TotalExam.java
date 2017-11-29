@@ -10,18 +10,18 @@ public class TotalExam {
 		TotalExam te = new TotalExam();
 		int t = Integer.parseInt("35");
 		if (te.a == 1 || te.a == 2 || te.a == 3) {
-			System.out.println("a°¡ 0ÀÌ¾Æ´Ï³×¿ä");
+			System.out.println("aê°€ 0ì´ì•„ë‹ˆë„¤ìš”");
 		} else if (te.a == 1 && te.a == 2 && te.a == 3) {
-			System.out.println("a°¡ 0ÀÌ³×¿ä");
+			System.out.println("aê°€ 0ì´ë„¤ìš”");
 		}
 
 		System.out.println(Integer.parseInt("167") == 167);
 
 		/*
-		 * System.out.println("½ºÆ®¸µ ¹è¿­ º¯¼öÀÇ ¹æ°¹¼ö ÀÔ·Â"); Scanner s=new Scanner(System.in);
+		 * System.out.println("ìŠ¤íŠ¸ë§ ë°°ì—´ ë³€ìˆ˜ì˜ ë°©ê°¯ìˆ˜ ì…ë ¥"); Scanner s=new Scanner(System.in);
 		 * int leng=s.nextInt(); s.nextLine(); String[] strArr=new String[leng];
 		 * 
-		 * for(int i=0;i<strArr.length;i++) { System.out.println("³ÖÀ» ¹®ÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		 * for(int i=0;i<strArr.length;i++) { System.out.println("ë„£ì„ ë¬¸ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		 * strArr[i]=s.nextInt()+""; } for(int i=0;i<strArr.length;i++) {
 		 * System.out.println(strArr[i]); }
 		 */

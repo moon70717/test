@@ -3,8 +3,8 @@ package p07;
 public class Exam02 {
 	static int water = 109;
 
-	// 5¸®ÅÍ,3¸®ÅÍ,2¸®ÅÍ ¹°ÅëÀ» ÀÌ¿ëÇØ
-	// °¡Àå ÀûÀº ¹°ÅëÀ»»ç¿ëÇØ 107¸®ÅÍ¸¦ ´ã´Â ¿¹Á¦¸¦ ¸¸µå½Ã¿À
+	// 5ë¦¬í„°,3ë¦¬í„°,2ë¦¬í„° ë¬¼í†µì„ ì´ìš©í•´
+	// ê°€ì¥ ì ì€ ë¬¼í†µì„ì‚¬ìš©í•´ 107ë¦¬í„°ë¥¼ ë‹´ëŠ” ì˜ˆì œë¥¼ ë§Œë“œì‹œì˜¤
 	public static void main(String[] args) {
 //		five = 0;
 //		three = 0;
@@ -18,15 +18,15 @@ public class Exam02 {
 	static void runNomal() {
 		int five = water / 5;
 		water = water % 5;
-		System.out.println("5¸®ÅÍ·Î ³ª´³½À´Ï´Ù.\n" + five + "°³ÀÇ ÅëÀ» »ç¿ëÇÏ¿´°í " + water + "¸¸Å­ÀÇ ¹°ÀÌ ³²¾Ò½À´Ï´Ù");
+		System.out.println("5ë¦¬í„°ë¡œ ë‚˜ëˆ´ìŠµë‹ˆë‹¤.\n" + five + "ê°œì˜ í†µì„ ì‚¬ìš©í•˜ì˜€ê³  " + water + "ë§Œí¼ì˜ ë¬¼ì´ ë‚¨ì•˜ìŠµë‹ˆë‹¤");
 		int three = water / 3;
 		water = water % 3;
-		System.out.println("3¸®ÅÍ·Î ³ª´³½À´Ï´Ù.\n" + three + "°³ÀÇ ÅëÀ» »ç¿ëÇÏ¿´°í " + water + "¸¸Å­ÀÇ ¹°ÀÌ ³²¾Ò½À´Ï´Ù");
+		System.out.println("3ë¦¬í„°ë¡œ ë‚˜ëˆ´ìŠµë‹ˆë‹¤.\n" + three + "ê°œì˜ í†µì„ ì‚¬ìš©í•˜ì˜€ê³  " + water + "ë§Œí¼ì˜ ë¬¼ì´ ë‚¨ì•˜ìŠµë‹ˆë‹¤");
 		int two = water / 2;
 		water = water % 2;
-		System.out.println("2¸®ÅÍ·Î ³ª´³½À´Ï´Ù.\n" + two + "°³ÀÇ ÅëÀ» »ç¿ëÇÏ¿´°í " + water + "¸¸Å­ÀÇ ¹°ÀÌ ³²¾Ò½À´Ï´Ù");
+		System.out.println("2ë¦¬í„°ë¡œ ë‚˜ëˆ´ìŠµë‹ˆë‹¤.\n" + two + "ê°œì˜ í†µì„ ì‚¬ìš©í•˜ì˜€ê³  " + water + "ë§Œí¼ì˜ ë¬¼ì´ ë‚¨ì•˜ìŠµë‹ˆë‹¤");
 
-		System.out.println("5¸®ÅÍ:" + five + " 3¸®ÅÍ:" + three + " 2¸®ÅÍ:" + two + " ³²Àº ¹°ÀÇ ¾ç:" + (water));
+		System.out.println("5ë¦¬í„°:" + five + " 3ë¦¬í„°:" + three + " 2ë¦¬í„°:" + two + " ë‚¨ì€ ë¬¼ì˜ ì–‘:" + (water));
 	}
 	
 	static void runWhile() {
@@ -55,6 +55,6 @@ public class Exam02 {
 				}
 			}
 		}
-		System.out.println("5¸®ÅÍ:" + five + " 3¸®ÅÍ:" + three + " 2¸®ÅÍ:" + two + " ³²Àº ¹°ÀÇ ¾ç:" + (water));
+		System.out.println("5ë¦¬í„°:" + five + " 3ë¦¬í„°:" + three + " 2ë¦¬í„°:" + two + " ë‚¨ì€ ë¬¼ì˜ ì–‘:" + (water));
 	}
 }

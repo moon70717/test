@@ -16,7 +16,7 @@ public class Exam01 {
 			String str = "";
 			for (int j = numarr[2]; j >= numarr[3]; j--) {
 				if ((i * j) % numarr[4] == 0) {
-					str += "[" + numarr[4] + "ÀÇ¹è¼ö], ";
+					str += "[" + numarr[4] + "ì˜ë°°ìˆ˜], ";
 					temp++;
 				}
 				else {
@@ -25,13 +25,13 @@ public class Exam01 {
 			}
 			System.out.println(str.substring(0, str.length() - 2));
 		}
-		System.out.println(numarr[4]+"ÀÇ ¹è¼ö´Â "+temp+"¹ø ³ª¿Ô½À´Ï´Ù");
+		System.out.println(numarr[4]+"ì˜ ë°°ìˆ˜ëŠ” "+temp+"ë²ˆ ë‚˜ì™”ìŠµë‹ˆë‹¤");
 	}
 
 	static void inputNums() {
 		Scanner s = new Scanner(System.in);
 		for (int i = 0; i < 5; i++) {
-			System.out.println((i + 1) + "¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+			System.out.println((i + 1) + "ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 			numarr[i] = s.nextInt();
 		}
 	}

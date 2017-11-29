@@ -5,11 +5,11 @@ public class Initialization3 {
 	String name;
 	
 	Initialization3(){
-		this("Á¦¸ñ¾øÀ½"+ ++count);
+		this("ì œëª©ì—†ìŒ"+ ++count);
 	}
 	Initialization3(String name){
 		this.name=name;
-		System.out.println("¹®¼­ "+ this.name+".txt°¡ »ı¼ºµÇ¾ú½À´Ï´Ù");
+		System.out.println("ë¬¸ì„œ "+ this.name+".txtê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤");
 	}
 	
 	public static void main(String[]args) {

@@ -9,9 +9,9 @@ public class ArrayExam {
 
 	void inputNums() {
 		Scanner s = new Scanner(System.in);
-		System.out.println("1Â÷¿ø ¹è¿­ °¹¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.println("1ì°¨ì› ë°°ì—´ ê°¯ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		num1 = s.nextInt();
-		System.out.println("2Â÷¿ø ¹è¿­ °¹¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+		System.out.println("2ì°¨ì› ë°°ì—´ ê°¯ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 		num2 = s.nextInt();
 		numArr = new int[num1][num2];
 	}

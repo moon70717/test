@@ -6,18 +6,18 @@ public class Tv {
 	int ch;
 	void power() {
 		power= !power;
-		System.out.println(power==true? "TV¸¦ Ä×½À´Ï´Ù.":"TV¸¦ ²°½À´Ï´Ù.");
+		System.out.println(power==true? "TVë¥¼ ì¼°ìŠµë‹ˆë‹¤.":"TVë¥¼ ê»ìŠµë‹ˆë‹¤.");
 	}
 	void color(String color) {
 		this.color= color;
-		System.out.println(color+"À¸·Î »öÀ» º¯°æÇÏ¿´½À´Ï´Ù.");
+		System.out.println(color+"ìœ¼ë¡œ ìƒ‰ì„ ë³€ê²½í•˜ì˜€ìŠµë‹ˆë‹¤.");
 	}
 	void chUp() {
 		ch++;
-		System.out.println("ÇöÀç Ã¤³ÎÀº "+ch+"ÀÔ´Ï´Ù.");
+		System.out.println("í˜„ì¬ ì±„ë„ì€ "+ch+"ì…ë‹ˆë‹¤.");
 	}
 	void chDown() {
 		ch--;
-		System.out.println("ÇöÀç Ã¤³ÎÀº "+ch+"ÀÔ´Ï´Ù.");
+		System.out.println("í˜„ì¬ ì±„ë„ì€ "+ch+"ì…ë‹ˆë‹¤.");
 	}
 }

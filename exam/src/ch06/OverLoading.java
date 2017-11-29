@@ -13,20 +13,20 @@ public class OverLoading {
 		System.out.println(i);
 	}
 	
-	/*static void over1(int cc) { ¸Å°³º¯¼öÀÇ ÀÌ¸§Àº »ó°üÀÌ ¾øÀ½
+	/*static void over1(int cc) { ë§¤ê°œë³€ìˆ˜ì˜ ì´ë¦„ì€ ìƒê´€ì´ ì—†ìŒ
 		System.out.println(cc);
 	}*/
 	
 	static int over2(int i) {
 		return i;
 	}
-	/*static long over2(int i) {  ¸®ÅÏÅ¸ÀÔ¶ÇÇÑ »ó°üÀÌ ¾øÀ½
+	/*static long over2(int i) {  ë¦¬í„´íƒ€ì…ë˜í•œ ìƒê´€ì´ ì—†ìŒ
 		return i;
 	}*/
 	
 	public static void main(String[]args) {
 		over1(3);
-		over1(3,5);//ÀÌ¸§ÀÌ °°¾Æµµ ¸Å°³º¯¼öÀÇ °³¼ö°¡ ´Ù¸£¸é ±¸ºĞÀÌµÊ
-		over1("¸Å°³º¯¼ö Å¸ÀÔÀÌ ´Ş¶óµµ ¤¡¤º");//¸Å°³º¯¼öÀÇ °³¼ö³ª Å¸ÀÔÀÌ ´Ş¶ó¾ßµÊ
+		over1(3,5);//ì´ë¦„ì´ ê°™ì•„ë„ ë§¤ê°œë³€ìˆ˜ì˜ ê°œìˆ˜ê°€ ë‹¤ë¥´ë©´ êµ¬ë¶„ì´ë¨
+		over1("ë§¤ê°œë³€ìˆ˜ íƒ€ì…ì´ ë‹¬ë¼ë„ ã„±ã…Š");//ë§¤ê°œë³€ìˆ˜ì˜ ê°œìˆ˜ë‚˜ íƒ€ì…ì´ ë‹¬ë¼ì•¼ë¨
 	}
 }

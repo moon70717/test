@@ -17,15 +17,15 @@ public class Test {
 
 	public static void main(String[] args) {
 		/*
-		 * Test test = new Test("°¡³ª´ÙABC123"); System.out.println(test.str);
+		 * Test test = new Test("ê°€ë‚˜ë‹¤ABC123"); System.out.println(test.str);
 		 * 
-		 * String str = "³ª ¿©±âÀÖ½À´Ï´Ù~~³ª"; test.print(str);
+		 * String str = "ë‚˜ ì—¬ê¸°ìˆìŠµë‹ˆë‹¤~~ë‚˜"; test.print(str);
 		 * 
-		 * test.print(str.replace("³ª", "¹®ÈñÁÖ")); test.print(str);
+		 * test.print(str.replace("ë‚˜", "ë¬¸í¬ì£¼")); test.print(str);
 		 * 
-		 * str = str.replace("³ª", "¹®ÈñÁÖ"); test.print(str);
+		 * str = str.replace("ë‚˜", "ë¬¸í¬ì£¼"); test.print(str);
 		 * 
-		 * System.out.println(str.lastIndexOf("³ª"));// µÚ¿¡¼­ºÎÅÍ Ã£±â ¾Õ¿¡¼­ºÎÅÍ Ã£±â´Â last»©¾ßµÊ
+		 * System.out.println(str.lastIndexOf("ë‚˜"));// ë’¤ì—ì„œë¶€í„° ì°¾ê¸° ì•ì—ì„œë¶€í„° ì°¾ê¸°ëŠ” lastë¹¼ì•¼ë¨
 		 */
 		ObjectExam objectExam = new ObjectExam();
 		objectExam.inputNums(objectExam);

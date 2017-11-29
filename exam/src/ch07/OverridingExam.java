@@ -4,20 +4,20 @@ class Father {
 	int f1 = 11;
 	
 	Father(String str){
-		System.out.println("ºÎ¸ğÅ¬·¡½º¸¦ »ó¼Ó¹Ş¾Ò½À´Ï´Ù. "+str);
+		System.out.println("ë¶€ëª¨í´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ì•˜ìŠµë‹ˆë‹¤. "+str);
 	}
 	
 	void printl(String a) {
-		System.out.println("ºÎ¸ğ Å¬·¡½ºÀÔ´Ï´Ù:" + a);
+		System.out.println("ë¶€ëª¨ í´ë˜ìŠ¤ì…ë‹ˆë‹¤:" + a);
 	}
 }
 
-public class OverridingExam extends Father {// ºÎ¸ğ Å¬·¡½º¿¡°Ô »ó¼Ó¹ŞÀº°ÍÀ» º¯°æÇÏ´Â ¿¹Á¦
+public class OverridingExam extends Father {// ë¶€ëª¨ í´ë˜ìŠ¤ì—ê²Œ ìƒì†ë°›ì€ê²ƒì„ ë³€ê²½í•˜ëŠ” ì˜ˆì œ
 	static int f1=1;
 	
 	OverridingExam(){
-		//super();// Á÷Á¢ ºÙÀÌÁö ¾ÊÀ¸¸é ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î Ãß°¡ÇÏ°ÔµÊ, ºÎ¸ğÀÇ »ı¼ºÀÚ
-		super("¾å");//ºÎ¸ğ Å¬·¡½ºÀÇ »ı¼ºÀÚ¸¦ È£ÃâÇÔ
+		//super();// ì§ì ‘ ë¶™ì´ì§€ ì•Šìœ¼ë©´ ì»´íŒŒì¼ëŸ¬ê°€ ìë™ìœ¼ë¡œ ì¶”ê°€í•˜ê²Œë¨, ë¶€ëª¨ì˜ ìƒì„±ì
+		super("ì–");//ë¶€ëª¨ í´ë˜ìŠ¤ì˜ ìƒì„±ìë¥¼ í˜¸ì¶œí•¨
 	}
 	
 	public static void main(String[] args) {
@@ -26,14 +26,14 @@ public class OverridingExam extends Father {// ºÎ¸ğ Å¬·¡½º¿¡°Ô »ó¼Ó¹ŞÀº°ÍÀ» º¯°æ
 		oe.callFather();
 	}
 
-	void callFather() {//ÀÌ¸§ÀÌ °°Àº º¯¼ö°¡ ÀÖÀ»¶§  super¸¦ ÀÌ¿ëÇÏ¿© ºÎ¸ğÅ¬·¡½ºÀÇ º¯¼ö¸¦ »ç¿ëÇÒ¼öÀÖÀ½, this¿Í ºñ½ÁÇÏ´Ù°í º¸¸éµÊ
+	void callFather() {//ì´ë¦„ì´ ê°™ì€ ë³€ìˆ˜ê°€ ìˆì„ë•Œ  superë¥¼ ì´ìš©í•˜ì—¬ ë¶€ëª¨í´ë˜ìŠ¤ì˜ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í• ìˆ˜ìˆìŒ, thisì™€ ë¹„ìŠ·í•˜ë‹¤ê³  ë³´ë©´ë¨
 		int f1=3;
 		System.out.println("f1:"+f1);
 		System.out.println("this.f1:"+this.f1);
-		System.out.println("super.f1:"+super.f1);//super´Â static¿¡¼­´Â »ç¿ëÇÒ¼ö ¾øÀ½
+		System.out.println("super.f1:"+super.f1);//superëŠ” staticì—ì„œëŠ” ì‚¬ìš©í• ìˆ˜ ì—†ìŒ
 	}
 	
-	void printl(String a) {// ºÎ¸ğÅ¬·¡½º¿¡ ÀÖ´Â ¿ä¼Ò¸¦ ¼öÁ¤ÇÒ¼ö ÀÖÀ½
-		System.out.println("ºÎ¸ğ Å¬·¡½º¸¦ ¿À¹ö¶óÀÌµùÇÑ ÀÚ½ÄÅ¬·¡½ºÀÔ´Ï´Ù:" + a);
+	void printl(String a) {// ë¶€ëª¨í´ë˜ìŠ¤ì— ìˆëŠ” ìš”ì†Œë¥¼ ìˆ˜ì •í• ìˆ˜ ìˆìŒ
+		System.out.println("ë¶€ëª¨ í´ë˜ìŠ¤ë¥¼ ì˜¤ë²„ë¼ì´ë”©í•œ ìì‹í´ë˜ìŠ¤ì…ë‹ˆë‹¤:" + a);
 	}
 }

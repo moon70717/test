@@ -1,4 +1,4 @@
-package ch06;
+package ch0706;
 
 public class InstanceMethod {
 	static int sInt=0;

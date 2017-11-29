@@ -1,4 +1,4 @@
-package ch07;
+package ch0707;
 
 abstract class no {//애 자채로는 아무것도 못함, 또한 인스턴스를 생성하지못함
 	void run() {//하지만 상속받아서 오버라이딩을 하거나 인터페이ㅏ스화 하기에는 적절함

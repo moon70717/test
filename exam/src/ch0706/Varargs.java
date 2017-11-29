@@ -1,4 +1,4 @@
-package ch06;
+package ch0706;
 
 public class Varargs {// 가변인자
 	String concate(String s1) {

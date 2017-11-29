@@ -1,4 +1,4 @@
-package ch06;
+package ch0706;
 
 public class Initialization {
 	int i=4;// 기본형 변수를 초기화

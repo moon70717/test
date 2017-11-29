@@ -1,4 +1,4 @@
-package ch07;
+package ch0707;
 
 class Father {
 	int f1 = 11;

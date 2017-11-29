@@ -1,4 +1,4 @@
-package p06;
+package p07;
 
 import java.util.Scanner;
 
@@ -30,7 +30,6 @@ public class Exam01 {
 		for (int i = 0; i < 5; i++) {
 			System.out.println((i + 1) + "번째 숫자를 입력하세요");
 			numarr[i] = s.nextInt();
-
 		}
 	}
 }

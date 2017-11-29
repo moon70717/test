@@ -11,11 +11,13 @@ public class Exam01 {
 	}
 
 	static void run() {
+		int temp=0;
 		for (int i = numarr[0]; i >= numarr[1]; i--) {
 			String str = "";
 			for (int j = numarr[2]; j >= numarr[3]; j--) {
 				if ((i * j) % numarr[4] == 0) {
 					str += "[" + numarr[4] + "의배수], ";
+					temp++;
 				}
 				else {
 					str += "[" + i + "*" + j + "=" + (i * j) + "]" + ", ";
@@ -23,6 +25,7 @@ public class Exam01 {
 			}
 			System.out.println(str.substring(0, str.length() - 2));
 		}
+		System.out.println(numarr[4]+"의 배수는 "+temp+"번 나왔습니다");
 	}
 
 	static void inputNums() {

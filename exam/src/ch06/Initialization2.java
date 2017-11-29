@@ -1,4 +1,4 @@
-package ch0706;
+package ch06;
 
 public class Initialization2 {
 	static int count=0;

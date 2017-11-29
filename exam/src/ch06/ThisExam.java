@@ -1,4 +1,4 @@
-package ch0706;
+package ch06;
 
 public class ThisExam {
 	int i;

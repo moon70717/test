@@ -23,11 +23,11 @@ public class Mon {
 
 	static void reset() {
 		if (notChange > change) {
-			System.out.println("¹Ù²ÙÁö ¾Ê¾ÒÀ»¶§°¡ ´õ Å­");
+			System.out.println("ë°”ê¾¸ì§€ ì•Šì•˜ì„ë•Œê°€ ë” í¼");
 			cLose++;
 		}
 		else {
-			System.out.println("¹Ù²åÀ»¶§°¡ ´õ Å­");
+			System.out.println("ë°”ê¿¨ì„ë•Œê°€ ë” í¼");
 			cWin++;
 		}
 		notChange = 0;
@@ -50,7 +50,7 @@ public class Mon {
 					notChange++;
 			}
 		}
-		System.out.println("¹Ù²ÙÁö ¾Ê¾ÒÀ»¶§: " + notChange);
+		System.out.println("ë°”ê¾¸ì§€ ì•Šì•˜ì„ë•Œ: " + notChange);
 
 		for (int j = 0; j < 1000000; j++) {
 			int reward = rand.nextInt(3) + 1;
@@ -66,7 +66,7 @@ public class Mon {
 					change++;
 			}
 		}
-		System.out.println("¹Ù²åÀ»¶§: " + change);
+		System.out.println("ë°”ê¿¨ì„ë•Œ: " + change);
 		reset();
 	}
 }

@@ -52,7 +52,7 @@ public class Exam03 {
 				}
 			}
 		}
-		System.out.println("오름차순 내림차순 여부를 확인합니다 (홀수: 오름차순 짝수: 내림차순)");
+		System.out.println("오름차순 내림차순 여부를 확인합니다 (홀수: 오름차순||짝수: 내림차순)");
 		set = s.nextInt();
 	}
 }

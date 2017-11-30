@@ -3,44 +3,48 @@ package p08;
 import java.util.Random;
 
 public class Lotto {
-	int[] rNums = new int[6];
+	int[] lottoNums;
+	Random r;
+	int lottoTemp;
+	int lotooMax;
 
-	public static void main(String[] args) {
-		Lotto lt = new Lotto();
-		lt.getRan();
-		lt.printRan();
-		
+	public Lotto(int rNumsLength,int lotooMax) {
+		lottoNums = new int[rNumsLength];
+		r = new Random();
+		this.lotooMax=lotooMax;
 	}
-	
-	void printRan() {
+
+	void printLotoo() {
 		String str = "";
-		for (int i = 0; i < rNums.length; i++) {
-			str += rNums[i] + ", ";
+		for (int i = 0; i < lottoNums.length; i++) {
+			str += lottoNums[i] + ", ";
 		}
 		System.out.println("로또 당첨번호 입니다\n" + str.substring(0, str.length() - 2));
 	}
-	
-	boolean checkRan(int ran, int max) {
-		for(int i=0;i<max;i++) {
-			if(rNums[i]==ran) {
+
+	boolean isDupl() {
+		for (int i = 0; i < lottoNums.length; i++) {
+			if (lottoNums[i] == lottoTemp) {
 				return true;
 			}
 		}
 		return false;
 	}
-	
-	void getRan() {
-		Random r = new Random();
-		int ran;
-		for (int i = 0; i < rNums.length; i++) {
-			ran=r.nextInt(45) + 1;
-			
-			if(checkRan(ran, i)) {
+
+	void getLottoNums() {
+		for (int i = 0; i < lottoNums.length; i++) {
+			lottoTemp = r.nextInt(45) + 1;
+			if (isDupl()) {
 				i--;
 				continue;
 			}
-			rNums[i] = ran;
+			lottoNums[i] = lottoTemp;
 		}
 	}
 	
+	public static void main(String[] args) {
+		Lotto lt = new Lotto(6,45);
+		lt.getLottoNums();
+		lt.printLotoo();
+	}
 }

@@ -40,5 +40,8 @@ public class Son extends FaFa{
 interface run {
 	int i=0;
 	
-	public abstract void runs();
+	public abstract void runs(int i);
+	public static void runs2(int i) {
+		System.out.println("이런식으로 넣을수도있음");
+	};
 }

@@ -1,10 +1,10 @@
 package p10;
 
-public class Excute extends Father {
+public class Excute {
 
 	int a = 4;
 
-	Excute() {
+	/*Excute() {
 		super(1, 333);
 	}
 
@@ -39,19 +39,16 @@ public class Excute extends Father {
 	
 	public void print(int i) {
 		super.print();
+	}*/
+	
+	public void print(Father f) {
+		System.out.println(f.toString());
 	}
 	
 	public static void main(String[] args) {
-		Father e = new Excute();
-//		e.print();
-		Excute e2=(Excute)e;
-		
-		Father[] fs=new Father[3];
-		
-		fs[0]=new Father(1,2);
-		
-		fs[2]=new Excute();
-		
-		System.out.println(fs[0]);
+		Father f = new Father(1,2);
+		Excute ex=new Excute();
+		System.out.println(f);
+		ex.print(f);
 	}
 }

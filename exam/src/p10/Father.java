@@ -17,4 +17,8 @@ public class Father {
 			}
 		}
 	}
+	public String toString() {
+		return "나를 불렀나";
+	}
+	
 }

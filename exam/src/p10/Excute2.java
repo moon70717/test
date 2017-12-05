@@ -17,5 +17,11 @@ public class Excute2 {
 		for(Object i:ob) {
 			System.out.println(i);
 		}
+		String aa="awfs";
+		char[] a=aa.toCharArray();
+		
+		for(char i:a) {
+			System.out.println(i);
+		}
 	}
 }

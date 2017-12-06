@@ -4,7 +4,22 @@ public class Excute {
 
 	public static void main(String[] args) {
 		ListExam le = new ListExam();
-		le.add("h1");
-		System.out.println(le.get(0));
+
+		/*for (int i = 0; i < 10; i++) {
+			le.add(i+"");
+		}
+		
+		for (int i = 0; i < le.size(); i++) {
+			if (Integer.parseInt(le.get(i)) % 2 == 0) {
+				le.remove(i);
+			}
+			System.out.println(le.get(i));
+		}*/
+		
+		
+		le.inputAlStr();
+		le.printAlStr();
+
+		// le.remove(0);
 	}
 }

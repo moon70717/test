@@ -53,7 +53,7 @@ public class Excute {
 		for (Person p : alPerson) {
 			Student s = (Student) p;
 			/*System.out.print(s.getName() + "의 나이는 ");
-			System.out.println(s.getAge() + "점 입니다.\n"+s.getCnt()+"번째 입력");*/
+			System.out.println(s.getPoint() + "점 입니다.\n"+s.getCnt()+"번째 입력");*/
 			System.out.println(p);
 		}
 	}
@@ -61,8 +61,19 @@ public class Excute {
 	public static void main(String[] args) {
 		Excute e = new Excute();
 
-		e.sortAlList();
-		e.perintAlPerson();
+//		e.sortAlList();
+//		e.perintAlPerson();
+		
+		ArrayList<Person> ppp=new ArrayList<Person>();
+		Person p=new Person();
+		ppp.add(p);
+		p=new Person();
+		ppp.add(p);
+		p.setAge(3);
+		
+		System.out.println(ppp.get(0));
+		System.out.println(ppp.get(1));
+		System.out.println(p);
 	}
 }
 

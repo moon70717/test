@@ -49,12 +49,13 @@ public class MapExam {
 			if(i==al.size()-1) {
 				al2.add(al.get(idx));
 				al.remove(idx);
-				i=idx=max=0;
+				idx=max=0;
+				i=-1;
 			}
 		}
 		
 		for(HashMap<String, String> h:al2) {
 			System.out.println(h);
-		}System.out.println(al.get(0).get("age"));
+		}
 	}
 }

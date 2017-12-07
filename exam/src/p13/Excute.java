@@ -29,8 +29,9 @@ public class Excute {
 	}
 
 	void sortAlList() {
-//		SortList sorr=new SortList();
+		SortList sorr=new SortList();
 //		Collections.sort(alPerson,sorr);
+		alPerson.sort(sorr);
 		Person tempp=new Person();
 		int age1;
 		int age2;

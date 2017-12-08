@@ -13,7 +13,7 @@ public class Lotto {
 		seleLotto=new ArrayList<Integer>();
 		lottoNum=new ArrayList<Integer>();
 		seleMod();
-		getRanNum(lottoNum);
+		getRanNum(lottoNum,0);
 	}
 	
 	void seleMod() {
@@ -23,45 +23,41 @@ public class Lotto {
 			
 			if(mod==1) {
 				System.out.println("자동모드");
-				getRanNum(seleLotto);
+				getRanNum(seleLotto,0);
 			}else if(mod==2) {
 				System.out.println("수동모드");
 				inputMyNum();
 			}else if(mod==3) {
 				System.out.println("반자동모드");
+				System.out.println("*을 입력하면 나머지 숫자는 랜덤숫자가 입력됩니다");
 				inputMyNum();
 			}
 	}
 	
-	void getRanNum(ArrayList<Integer> li) {
+	void getRanNum(ArrayList<Integer> li, int str) {
 		Random rand=new Random();
 		int input;
-		for(int i=0;i<6;i++) {
+		for(int i=str;i<6;i++) {
 			input=rand.nextInt(45)+1;
 			if(lottoNum.indexOf(li)==-1) {
-				System.out.print(i+"번째 숫자: "+input+"\t");
+				System.out.print((i+1)+"번째 숫자: "+input+"\t");
 				li.add(input);
+				continue;
 			}
-			else {
-				i--;
-			}
+			i--;
 		}System.out.println();
 	}
 	
 	void inputMyNum() {
 		System.out.println("로또번호를 입력하세요");
-		if(mod==3) {
-			System.out.println("*을 입력하면 랜덤숫자가 입력됩니다");
-		}
 		Scanner sc=new Scanner(System.in);
-		String input;
-		int in;
 		for(int i=0;i<6;i++) {
-			input=sc.nextLine();
+			String input=sc.nextLine();
 			if(input.equals("*")) {
-				seleLotto.add(dupl());
+				getRanNum(seleLotto,i);
+				break;
 			}else {
-				in=Integer.parseInt(input);
+				int in=Integer.parseInt(input);
 				if((in<=45&&in>=1)&&seleLotto.indexOf(in)==-1) {
 					seleLotto.add(in);
 				}
@@ -71,17 +67,6 @@ public class Lotto {
 				}
 			}
 		}sc.close();
-	}
-	
-	int dupl() {
-		Random r=new Random();
-		int in;
-		for(;;) {
-			in=r.nextInt(45)+1;
-			if(seleLotto.indexOf(in)==-1) {
-				return in;
-			}
-		}
 	}
 	
 	void checkNum() {
@@ -99,7 +84,7 @@ public class Lotto {
 				}
 			}
 		}
-		System.out.println(temp+"개 맞았습니다.");
+		System.out.println("\n"+temp+"개 맞았습니다.");
 	}
 	
 	public static void main(String[]args) {

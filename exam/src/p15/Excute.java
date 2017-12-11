@@ -5,17 +5,33 @@ import java.util.ArrayList;
 public class Excute {
 
 	public static void main(String[] args) {
-		User us=new User("유저",3);
-		
-		ArrayList<User> userList=new ArrayList<User>();
-		userList.add(us);
-		us=new User("us1",4);
-		userList.add(us);
-		
-		userList.add(new User("sd",34));
-		
-		for(User s:userList) {
-			System.out.println(s);
+		Controller ct = new Controller();
+		ArrayList<User> userList = ct.get("list", null);
+		for (int i = 1; i <= 5; i++) {
+			User user = new User("이름" + i, i, i);
+			ct.get("add", user);
 		}
+		for (User u : userList) {
+			System.out.println(u);
+		}
+//		
+//		User ru = new User(3);
+//		ct.get("remove", ru);
+//		for (User u : userList) {
+//			System.out.println(u);
+//		}
+		
+//		ru.setName("이름1");
+//		ct.get("search",ru);
+//		System.out.println("검색결과");
+//		for (User u : userList) {
+//			System.out.println(u);
+//		}
+		User user=new User("모모",20,2);
+		ct.get("update", user);
+		for(User u:userList) {
+			System.out.println(u);
+		}
+		
 	}
 }

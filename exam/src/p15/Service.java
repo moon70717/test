@@ -1,8 +1,32 @@
 package p15;
 
-public class Service extends Server{
+import java.util.ArrayList;
 
-	public void print() {
-		System.out.println("서버클래스입니다");
+public class Service{
+	
+	private DAO dao;
+	
+	public Service(){
+		dao=new DAO();
+	}
+	
+	public boolean insertUser(User user) {
+		return dao.insertUser(user);
+	}
+	
+	public boolean removeUser(User user) {
+		return dao.removeUser(user);
+	}
+	
+	public boolean removeUser(int no) {
+		return dao.removeUser(no);
+	}
+	
+	public boolean updateUser(User user) {
+		return dao.updateUser(user);
+	}
+	
+	public ArrayList<User> getUserList(String str){
+		return dao.getUserList(str);
 	}
 }

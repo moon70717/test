@@ -15,7 +15,7 @@ public class Cal {
 		result = new ArrayList<Integer>();
 
 	}
-
+	
 	void inputNum() {
 		Scanner s = new Scanner(System.in);
 		System.out.println("첫번째 수를 입력하세요");

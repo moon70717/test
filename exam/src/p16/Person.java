@@ -1,7 +1,7 @@
 package p16;
 
 public class Person implements Action {
-	
+
 	private String name;
 	private int age;
 	private int cm;
@@ -15,17 +15,17 @@ public class Person implements Action {
 	}
 
 	public void eat() {
-		System.out.println(name+"가 먹습니다");
+		System.out.println(name + "가 먹습니다");
 	}
 
 	@Override
 	public void sleep() {
-		System.out.println(name+"가 잡니다");
+		System.out.println(name + "가 잡니다");
 	}
 
 	@Override
 	public void walk() {
-		System.out.println(name+"가 걷습니다");
+		System.out.println(name + "가 걷습니다");
 	}
 
 	public String getName() {

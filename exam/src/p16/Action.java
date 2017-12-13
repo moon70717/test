@@ -9,4 +9,5 @@ public interface Action {
 	public void walk();
 	
 	public String toString();
+	
 }

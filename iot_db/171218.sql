@@ -40,6 +40,6 @@ DROP TABLE BOARD;
 SELECT * FROM USER_INFO;
 
 INSERT INTO USER_INFO(UINAME,UIAGE,UIID,UIPWD,CINO,uiregdate,address)
-VALUES ("갑길동",33,"GGG","GGG",3,Now());
+VALUES ("갑길동",33,"ttest","GGG",3,Now(),"");
 
 delete from user_info where uino=3;

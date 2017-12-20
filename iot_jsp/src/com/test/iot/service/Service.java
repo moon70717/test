@@ -1,15 +1,17 @@
-package p20;
+package com.test.iot.service;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
+import com.test.iot.common.DBCon;
+
 public class Service {
 	DBCon dbCon;
 	String sql;
 
-	Service() {
+	public Service() {
 		dbCon = new DBCon();
 	}
 

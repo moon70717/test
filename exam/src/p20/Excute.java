@@ -10,7 +10,7 @@ public class Excute {
 	public static void main(String[] args) throws SQLException {
 		Service s = new Service();
 		LinkedHashMap<String, Object> hm = new LinkedHashMap<String, Object>();
-		hm.put("cidesc", "정보보안 바꿈");
+		/*hm.put("cidesc", "정보보안 바꿈");
 		hm.put("cino", 3);
 		int result = s.updateClassInfo(hm);
 
@@ -44,22 +44,19 @@ public class Excute {
 		hm.put("uipwd", "testPwd");
 		hm.put("cino", 3);
 		hm.put("address", "서울");
-		
 		String sql = "INSERT INTO user_info(UINAME,UIAGE,UIID,UIPWD,CINO,uiregdate,address) " + "VALUES (?,?,?,?,?,Now(),?)";
 		
-		s.getExam(hm,sql);
+		s.getExam(hm,sql);*/
 		
 		
 		
 		// 여기부터 get
 		hm = new LinkedHashMap<String, Object>();
-		hm.put("value", "*");
+		hm.put("value", "uino,uiname,uiid");
 		hm.put("from", "user_info");
-		ArrayList<HashMap<String, Object>> classList = s.getClassInfo();
-		System.out.println(classList);//classList
+		ArrayList<HashMap<String, Object>> List = s.getInfo(hm);
 
-		ArrayList<HashMap<String, Object>> userList = s.getUserInfo();
-		for (HashMap<String, Object> hms : userList) {//userList
+		for (HashMap<String, Object> hms : List) {//userList
 			System.out.println(hms);
 		}
 	}

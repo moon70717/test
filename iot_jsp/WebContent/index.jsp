@@ -7,26 +7,13 @@
 <title>iot2</title>
 <style>
 * {
+	color: yellow;
 	
 }
 </style>
-<script>
-	echo("sadasd");
-	//주서어어억
-</script>
 </head>
 <body>
-	<!-- 주우서어억 -->
-	
-	<%
-		String str = "jsp?";
-		out.println(str);
-		log("log");
-		out.print("<br>이렇게 내부에 넣는다<br>");
-		if (1 + 1 - 1 == 1) {
-			out.print(true);
-		}
-	%>
-
+<a href="http://www.naver.com">네이버</a>
+<a href="/user/list.jsp">유저리스트</a>
 </body>
 </html>

@@ -57,3 +57,5 @@ CALL P_INSERT_CLASS_INFO('TEST','TESTR');
 
 ALTER TABLE USER_INFO
 add column address varchar(30) null;
+
+select * from user_info;

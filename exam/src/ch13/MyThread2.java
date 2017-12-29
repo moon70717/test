@@ -9,7 +9,7 @@ public class MyThread2 {
 			System.out.printf("%s", new String("-"));
 		}
 		
-		System.out.print("소요시간 1"+(System.currentTimeMillis()-startTime));
+		System.out.print("소요시간 1" + (System.currentTimeMillis()-startTime));
 		System.out.println("");
 		for(int i=0;i<300;i++) {
 			System.out.printf("%s", new String("|"));

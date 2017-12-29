@@ -2,6 +2,7 @@ package ch06;
 
 public class Constructor {
 	int strat;
+	private int sdsd;
 	
 	Constructor(int i){//생성자에 있는것은 생성자가 생성할때 실행됨
 		strat=i;//값 선언가능
